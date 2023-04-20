@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+/* 전체 설정 */
+body {
+  margin: 0;
+  background-color: #303030;
+  color: white;
+}
+/* 각각의 className 설정 */
+.title {
+  text-align: center;
+  margin-top: 200px;
+}
+.title-sub {
+  text-align: center;
+}
