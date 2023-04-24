@@ -32,7 +32,7 @@ export default function List() {
         // console.log("sequence", sequence);
 
         return (
-          <div className="food">
+          <div className="food" key={sequence}>
             <h4>
               {/* 나의 풀이 : 순서를 주고 상품명을 출력 */}
               {sequence}, {product} $40
