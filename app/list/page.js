@@ -17,28 +17,23 @@ export default function List() {
   //   return 10;
   // });
   // console.log(b);
-  */
-
   상품.map((a, b) => {
     // console.log("상품 a : ", a);
     // console.log("순서 b : ", b);
   });
+  */
 
   return (
     <div>
       <h3 className="title">상품목록</h3>
       {상품.map((product, sequence) => {
-        // console.log("product : ", product);
-        // console.log("sequence", sequence);
-
         return (
           <div className="food" key={sequence}>
             <h4>
-              {/* 나의 풀이 : 순서를 주고 상품명을 출력 */}
-              {sequence}, {product} $40
-              {/* 정답 2가지
-              {상품[sequence]} $40
-              {product} $40 */}
+              {/* 이미지 추가 */}
+              <img src={"/food" + sequence + ".png"} className="food-img" />
+              {/* 상품 적용 : 순서대로 */}
+              {product} $40
             </h4>
           </div>
         );

@@ -68,3 +68,23 @@ body {
   width: 200px;
   background-color: palevioletred;
 }
+
+/* food img */
+.food-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Cart page */
+.cart-item {
+  /* 요소 안의 여백 */
+  padding: 10px;
+  /* 가로 정렬 */
+  display: flex;
+  /*? 가로 사이의 여백 */
+  justify-content: space-around;
+  /*? 보더 아래 부분 1px 굵기  */
+  border-bottom: 1px solid grey;
+  /*? 요소와 보더 사이의 세로 여백 */
+  line-height: 0px;
+}
