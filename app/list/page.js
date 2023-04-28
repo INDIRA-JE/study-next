@@ -1,5 +1,5 @@
-"use client";
-import { useState } from "react";
+"use client"; // 이벤트(onClick, useState 등) 사용에 필요 : Client Component로 변경해서 사용 가능하게 해줌
+import { useState } from "react"; // useState 사용 준비
 
 export default function List() {
   let 상품 = ["Tomatoes", "Pasta", "Coconut"];
