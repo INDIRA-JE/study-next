@@ -16,7 +16,7 @@ export default function List() {
             <img src={`/food${sequence}.png`} className="food-img" />
             {/* 3번째 구분 : 상품 적용 : 순서대로 */}
             <h3>{product} $40</h3>
-            {/* 4번째 구분 : 수량 */}
+            {/* 4번째 구분 : 수량[0] */}
             <button
               onClick={() => {
                 let copy = [...수량];
@@ -36,6 +36,29 @@ export default function List() {
             >
               +
             </button>
+            {/* 5번째 구분 : 수량[1] */}
+            <div>
+              <button
+                onClick={() => {
+                  // 클릭이 했을 때 수량이 변경 되어야 함
+                  let copy = [...수량];
+                  copy[1]--;
+                  수량변경(copy);
+                }}
+              >
+                -
+              </button>
+              <span> {수량[1]} </span>
+              <button
+                onClick={() => {
+                  let copy = [...수량];
+                  copy[1]++;
+                  수량변경(copy);
+                }}
+              >
+                +
+              </button>
+            </div>
           </div>
         );
       })}
